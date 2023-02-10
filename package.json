@@ -1,0 +1,44 @@
+{
+  "name": "goit-fullstack-practice",
+  "version": "1.0.0",
+  "description": "Test project project",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon --experimental-json-modules backend/server",
+    "client": "npm start --prefix frontend",
+    "start": "node  ./backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "ewa"
+  ],
+  "author": "EREN",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mongoose": "^5.10.16",
+    "react-router-bootstrap": "^0.25.0",
+    "typeface-roboto": "^1.1.13",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "concurrency": "^0.1.4",
+    "nodemon": "^2.0.6"
+  }
+}
